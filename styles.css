@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
@@ -53,6 +54,16 @@ section {
   padding: 3rem 1rem;
 }
 
+.about, .skills, .socials {
+  background: #fff;
+  margin: 2rem 0;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .skills ul {
   list-style: none;
   padding: 0;
@@ -69,6 +80,7 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Social Icons */
 .icons a {
   margin: 0 1rem;
   text-decoration: none;
@@ -86,4 +98,63 @@ footer {
   background: #fafafa;
   font-size: 0.9rem;
   color: #777;
+}
+
+/* Design Preview Section */
+.design-preview {
+  padding: 3rem 1rem;
+  background-color: #fefefe;
+}
+
+.design-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.design-preview p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.preview-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.preview-gallery img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-visit {
+  display: inline-block;
+  background: #00b894;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn-visit:hover {
+  background: #019875;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .typing {
+    font-size: 1.8rem;
+  }
+
+  .preview-gallery img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
