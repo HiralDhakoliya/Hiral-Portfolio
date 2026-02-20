@@ -90,5 +90,5 @@ Growth happens when systems face real users.
 
 ## 📫 Connect With Me
 
-LinkedIn: [Add Link]  
-Email: [Add Email]
+LinkedIn: [www.linkedin.com/in/hiral-dhakoliya-438453359]  
+Email: [dhakoliyahiral06@gmail.com]
