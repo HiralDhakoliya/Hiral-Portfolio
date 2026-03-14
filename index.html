@@ -1,160 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hiral Dhakoliya | Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiral Dhakoliya | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Inline styles for contact form messages */
+    .form-message {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+    .form-message.success {
+      color: #1a73e8;
+    }
+    .form-message.error {
+      color: #e53935;
+    }
+  </style>
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="logo">Hiral Dhakoliya</div>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#testimonials">Testimonials</a></li>
-    <li><a href="#impact">Impact</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="resume.pdf" download class="nav-btn">Resume</a></li>
-  </ul>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Hiral Dhakoliya</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" download class="nav-btn">Resume</a></li>
+    </ul>
+  </nav>
 
-<section class="hero">
-  <h1>Hiral Dhakoliya</h1>
-  <h3>BSc Computer Science
-     • Aspiring Product Manager
-     • EdTech Innovator
-     Developing "Teacher’s Desk"
-| Specialized in AI Systems, Python, and Data-Driven Design.</h3>
-  <h3>Engineering Research-Driven Systems</h3>
-  <p class="hero-sub">
-    I design structured digital products that combine clarity,
-    innovation and execution-level engineering.
-  </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hiral Dhakoliya</h1>
+        <h3>BSc Computer Science • Product Builder • EdTech Innovator</h3>
+        <p>
+          Creator of <b>Teacher’s Desk</b>, a modern academic management system.<br>
+          Focused on building structured digital products using Python, AI tools and research-driven problem solving.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="resume.pdf" download class="btn secondary">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="hiral.png" alt="Hiral Dhakoliya">
+      </div>
+    </div>
+  </section>
 
-  <div class="hero-buttons">
-    <a href="#work" class="btn primary">View Work</a>
-    <a href="resume.pdf" download class="btn secondary">Download Resume</a>
-  </div>
-</section>
-
-<section id="about" class="section">
-  <div class="container two-col">
-    <div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
       <h2>About</h2>
       <p>
-        I focus on building scalable digital systems through research clarity,
-        strong architectural thinking, and clean implementation.
+        I focus on designing digital systems that combine research clarity, structured thinking and real-world implementation.<br>
+        My work spans product thinking, software engineering and technology innovation — especially in education technology and intelligent automation systems.
       </p>
     </div>
+  </section>
 
-    <div class="skills">
-      <div class="skill">
-        <span>Frontend Engineering</span>
-        <div class="bar"><div class="progress" style="width:90%"></div></div>
+  <!-- Skills Section -->
+  <section id="skills" class="section light">
+    <h2 class="center">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <p>Python, JavaScript, HTML, CSS</p>
       </div>
-      <div class="skill">
-        <span>Backend Systems</span>
-        <div class="bar"><div class="progress" style="width:85%"></div></div>
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>Frontend UI, Responsive Design, GitHub Deployment</p>
       </div>
-      <div class="skill">
-        <span>Research & Innovation</span>
-        <div class="bar"><div class="progress" style="width:88%"></div></div>
+      <div class="skill-card">
+        <h3>Backend Systems</h3>
+        <p>APIs, Databases, System Architecture</p>
+      </div>
+      <div class="skill-card">
+        <h3>Product Thinking</h3>
+        <p>Problem Solving, Product Strategy, Research</p>
+      </div>
+      <div class="skill-card">
+        <h3>AI Tools</h3>
+        <p>Automation Tools, AI Workflows</p>
+      </div>
+      <div class="skill-card">
+        <h3>Data Analysis</h3>
+        <p>Visualization, Insights, Data Interpretation</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="work" class="section center">
-  <h2>Selected Work</h2>
-
-  <div class="card-grid">
-
-    <a href="https://github.com/HiralDhakoliya/Career-Clarity-Platform" target="_blank" class="card">
-      <h3>Career Clarity Platform</h3>
-      <p>AI-powered decision architecture for students.</p>
-    </a>
-
-    <a href="https://github.com/HiralDhakoliya/Teachers-Desk" target="_blank" class="card">
-      <h3>Teacher’s Desk</h3>
-      <p>Modern academic management system.</p>
-    </a>
-
-    <a href="https://github.com/HiralDhakoliya/Life-Under-Wheels" target="_blank" class="card">
-      <h3>Life Under Wheels</h3>
-      <p>Research on road safety and driver behavior.</p>
-    </a>
-
-    <br>
-
-    <a href="https://github.com/HiralDhakoliya/DRIVE_ALERT" target="_blank" class="card">
-      <h3>DRIVE_ALERT</h3>
-      <p>Drowsiness detection safety system.</p>
-    </a>
-
-    <a href="https://github.com/HiralDhakoliya/HYGIENE-TECH" target="_blank" class="card">
-      <h3>HYGIENE TECH</h3>
-      <p>Automated hygiene sanitation system.</p>
-    </a>
-
-  </div>
-</section>
-
-
-<section id="testimonials" class="section center">
-  <h2>Testimonials</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial">
-      <p>"I am proud to have talented and dedicated students like you. Keep up the excellent work and continue to achieve great success! 👏🎉"</p>
-      <span>– Mentor</span>
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <h2 class="center">Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <h3>Power BI Fundamentals</h3>
+        <p>Data visualization and dashboard development</p>
+      </div>
+      <div class="cert-card">
+        <h3>Python Programming</h3>
+        <p>Automation and backend system development</p>
+      </div>
+      <div class="cert-card">
+        <h3>AI & Emerging Technologies</h3>
+        <p>Artificial intelligence tools and innovation</p>
+      </div>
     </div>
-    <div class="testimonial">
-      <p>"Strong research mindset combined with real-world delivery."</p>
-      <span>– Project Lead</span>
-    </div>
-    <div class="testimonial">
-      <p>"you are a inspiration for us🥹🫶"</p>
-      <span>– Juniors</span>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="impact" class="section center">
-  <h2>Impact</h2>
-  <div class="stats">
-    <div>
-      <h3>5+</h3>
-      <p>Projects</p>
+  <!-- Projects Section -->
+  <section id="projects" class="section light">
+    <h2 class="center">Projects</h2>
+    <div class="card-grid">
+      <a href="https://github.com/HiralDhakoliya/Career-Clarity-Platform" target="_blank" class="card">
+        <h3>Career Clarity Platform</h3>
+        <p>AI powered decision architecture for students.</p>
+      </a>
+      <a href="https://github.com/HiralDhakoliya/Teachers-Desk" target="_blank" class="card">
+        <h3>Teacher’s Desk</h3>
+        <p>Academic management platform.</p>
+      </a>
+      <a href="https://github.com/HiralDhakoliya/Life-Under-Wheels" target="_blank" class="card">
+        <h3>Life Under Wheels</h3>
+        <p>Driver behaviour research system.</p>
+      </a>
+      <a href="https://github.com/HiralDhakoliya/DRIVE_ALERT" target="_blank" class="card">
+        <h3>Drive Alert</h3>
+        <p>Drowsiness detection safety system.</p>
+      </a>
+      <a href="https://github.com/HiralDhakoliya/HYGIENE-TECH" target="_blank" class="card">
+        <h3>Hygiene Tech</h3>
+        <p>Automated sanitation system.</p>
+      </a>
     </div>
-    <div>
-      <h3>30+</h3>
-      <p>Awards</p>
+  </section>
+
+  <!-- Impact Section -->
+  <section id="impact" class="section">
+    <h2 class="center">Impact</h2>
+    <div class="stats">
+      <div>
+        <h3>5+</h3>
+        <p>Projects</p>
+      </div>
+      <div>
+        <h3>30+</h3>
+        <p>Awards</p>
+      </div>
+      <div>
+        <h3>12+</h3>
+        <p>Skills</p>
+      </div>
     </div>
-    <div>
-      <h3>12+</h3>
-      <p>Core Skills</p>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section light">
+    <h2 class="center">Testimonials</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"Strong research mindset combined with real-world execution."</p>
+        <span>Mentor</span>
+      </div>
+      <div class="testimonial">
+        <p>"Dedicated and highly innovative student."</p>
+        <span>Faculty</span>
+      </div>
+      <div class="testimonial">
+        <p>"Inspiring work and leadership."</p>
+        <span>Juniors</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="section center">
-  <h2>Let’s Build Something Meaningful</h2>
-  <p class="contact-text">
-    Open to collaborations, research initiatives, and impactful product builds.
-  </p>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2 class="center">Contact</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+      <div id="form-message" class="form-message"></div>
+    </form>
+  </section>
 
-  <div class="contact-links">
-    <a href="mailto:your@email.com" class="btn secondary">Email</a>
-    <a href="https://linkedin.com" target="_blank" class="btn secondary">LinkedIn</a>
-    <a href="https://github.com" target="_blank" class="btn secondary">GitHub</a>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer>
+    © 2026 Hiral Dhakoliya
+  </footer>
 
-<footer>
-  © 2026 Hiral Dhakoliya
-</footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // EmailJS Form Submission
+    document.addEventListener("DOMContentLoaded", function() {
+      emailjs.init("1ELsJe665nmoGYjKS"); // Replace with your EmailJS Public Key
 
+      const contactForm = document.getElementById("contact-form");
+      const formMessage = document.getElementById("form-message");
+
+      contactForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_slwj5nu", "template_hlq6tau", this)
+        .then(function() {
+          formMessage.textContent = "Message sent successfully! 🎉";
+          formMessage.className = "form-message success";
+          contactForm.reset();
+        }, function(error) {
+          console.error("Failed to send message:", error);
+          formMessage.textContent = "Oops! Something went wrong. Please try again.";
+          formMessage.className = "form-message error";
+        });
+      });
+    });
+  </script>
 </body>
 </html>
